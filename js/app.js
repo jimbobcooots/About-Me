@@ -4,6 +4,10 @@
 //Question 1
 var foreignCountry = prompt('Have I lived somewhere outside the United States? Please respond yes or no').toLowerCase();
 
+if(foreignCountry) {
+  foreignCountry = foreignCountry.toLowerCase();
+}
+
 if(foreignCountry === 'yes') {
   alert('Ye, Australia mate');
   console.log('For question #1 the user responded ' + foreignCountry + ' and was correct') 
@@ -15,7 +19,7 @@ if(foreignCountry === 'yes') {
 //Question 2
 var yearsInOz = parseInt(prompt('How many years did I live in Australia? Integers only'));
 
-if(yearsInOz === '5') {
+if(yearsInOz === 5) {
   alert('That is correct!')
   console.log('For question #2 the user responded ' + yearsInOz + ' and was correct');
 } else {
@@ -24,7 +28,11 @@ if(yearsInOz === '5') {
 }
 
 //Question 3
-var surfingWaves = prompt('Did I catch a wave while surfing? Please respond yes or no').toLowerCase();
+var surfingWaves = prompt('Did I catch a wave while surfing? Please respond yes or no');
+
+if(surfingWaves) {
+  surfingWaves = surfingWaves.toLowerCase();
+}
 
 if(surfingWaves === 'yes') {
   alert('As much as I\'d like to say getting up for two seconds counts, I can\'t two seconds');
@@ -37,6 +45,10 @@ if(surfingWaves === 'yes') {
 //Question 4
 var kangarooBite = prompt('Have I ever been bitten by a kangaroo?').toLowerCase();
 
+if(kangarooBite) {
+  kangarooBite = kangarooBite.toLowerCase();
+}
+
 if(kangarooBite === 'yes') {
   alert('No, but I was bitten by a Quokka which is like a miniature version of a kangaroo');
   console.log('For question #4 the user responded ' + kangarooBite + ' and was correct');
@@ -47,6 +59,10 @@ if(kangarooBite === 'yes') {
 
 //Question 5
 var alligatorGame = prompt('Did I ever toy with an alligator in Australia by dangling a long string in front of it?').toLowerCase();
+
+if(alligatorGame) {
+  alligatorGame = alligatorGame.toLowerCase();
+}
 
 if(alligatorGame === 'yes') {
   alert('Hell no! I did it in Louisiana, alligators don\'t live in Australia, duh!');
