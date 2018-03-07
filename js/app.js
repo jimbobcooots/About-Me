@@ -2,7 +2,7 @@
 
 
 //Question 1
-var foreignCountry = prompt('Have I lived somewhere outside the United States? Please respond yes or no').toLowerCase();
+var foreignCountry = prompt('Have I lived somewhere outside the United States? Please respond yes or no');
 
 if(foreignCountry) {
   foreignCountry = foreignCountry.toLowerCase();
@@ -43,7 +43,7 @@ if(surfingWaves === 'yes') {
 }
 
 //Question 4
-var kangarooBite = prompt('Have I ever been bitten by a kangaroo?').toLowerCase();
+var kangarooBite = prompt('Have I ever been bitten by a kangaroo?');
 
 if(kangarooBite) {
   kangarooBite = kangarooBite.toLowerCase();
@@ -58,7 +58,7 @@ if(kangarooBite === 'yes') {
 }
 
 //Question 5
-var alligatorGame = prompt('Did I ever toy with an alligator in Australia by dangling a long string in front of it?').toLowerCase();
+var alligatorGame = prompt('Did I ever toy with an alligator in Australia by dangling a long string in front of it?');
 
 if(alligatorGame) {
   alligatorGame = alligatorGame.toLowerCase();
