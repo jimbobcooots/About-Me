@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(255, 176, 176);
+}
+
+.heading {
+  color:rgb(59, 130, 109);
+  margin-top: 200px;
+}
+
+.myStory {
+  font-family: 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.statement {
+  text-align: center;
+}
+
