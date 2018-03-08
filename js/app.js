@@ -73,7 +73,7 @@ if(alligatorGame === 'yes') {
 }
 
 //Question 7: Which countries have I visited?
-
+// array of countries I have visited needs to be added to this function
 var questionCount = 6;
 
 var countries = ['Thailand', 'Australia', 'France', 'Spain'];
