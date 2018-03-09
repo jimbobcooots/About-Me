@@ -1,7 +1,8 @@
 'use strict';
-// make all questions non-case sensitive
+// make all questions non-case sensitive as well as giving 'y' or 'n' options using ||
 // fix console log order issues, because some of my questions aren't console logging in order
 // solve any efficiency issues and complete JS stretch goals
+// change question topics
 
 function aboutMeQuiz () {
   var totalScore = 0;
