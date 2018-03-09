@@ -1,4 +1,7 @@
 'use strict';
+// make all questions non-case sensitive
+// fix console log order issues, because some of my questions aren't console logging in order
+// solve any efficiency issues and complete JS stretch goals
 
 function aboutMeQuiz () {
   var totalScore = 0;
