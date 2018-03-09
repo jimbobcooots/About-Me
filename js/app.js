@@ -99,6 +99,25 @@ if(alligatorGame === 'yes') {
 if (question5() === true ) {
   score +=1;
 }
+function numberOfPoints () {
+  for (var count = 4; count > 0; count--) {
+  
+    var pointsGuess = parseInt(prompt('How many points did Wilt Chamberlain score in a game?'));
+  
+    if (pointsGuess === 100) {
+      alert ('correct');
+       return true;
+    } else if (pointsGuess < 100) {
+      alert ('too low');
+    } else {
+      alert ('too high');
+    }
+    
+    if (count < 1) {
+      alert ('You ran out tries, you stink!');
+    }
+  }
+ }
 //Question 7: ?
 // array of countries I have visited needs to be added to this function
 function question7() {
