@@ -4,6 +4,8 @@
 // solve any efficiency issues and complete JS stretch goals
 // change question topics
 
+'use strict';
+
 function aboutMeQuiz () {
   var totalScore = 0;
 
@@ -18,6 +20,7 @@ function aboutMeQuiz () {
     } else if (countryGuess.toLowerCase === 'no'){
       console.log('For question #1 the user was incorrect');
       alert('Nah, Australia mate');
+      
     } else {
       console.log('For question #1 the user did not answer');
       alert('You didn\'t answer!');
@@ -42,8 +45,7 @@ function aboutMeQuiz () {
     } else if (yearsGuess < 5) {
       console.log('For question #2 the user was incorrect');
       alert ('Actually it was 5 years!');
-    }
-    else {
+    } else {
       console.log('For question #2 the user did not answer');
       alert('You didn\'t answer!');
     }
@@ -61,13 +63,16 @@ function aboutMeQuiz () {
       surfingWaves = surfingWaves.toLowerCase();
     }
 
-    if(surfingWaves === 'yes') {
+    if(surfingWaves === 'yes' || surfingWaves === 'y') {
       console.log('For question #3 the user was correct');
       alert('As much as I\'d like to say getting up for two seconds counts, I can\'t two seconds');
       return true;
-    } else {
+    } else if (surfingWaves === 'no' || surfingWaves === 'n') {
       console.log('For question #3 the user was incorrect');
       alert('Went surfing on five different occasions, ended up eating saltwater every time');
+    } else {
+      console.log('For question #3 the user did not answer');
+      alert ('You didn\'t answer!');
     }
   }
 
@@ -83,11 +88,11 @@ function aboutMeQuiz () {
       kangarooBite = kangarooBite.toLowerCase();
     }
 
-    if(kangarooBite === 'yes') {
+    if(kangarooBite === 'yes' || kangarooBite === 'y') {
       console.log('For question #4 the user was correct');
       alert('No, but I was bitten by a Quokka which is like a miniature version of a kangaroo');
       return true;
-    } else {
+    } else if (kangarooBite === 'no' || kangarooBite === 'n') {
       console.log('For question #4 the user was incorrect');
       alert('Correct, I wouldn\'t go near one, they\'re strong as hell!');
     }
@@ -105,11 +110,11 @@ function aboutMeQuiz () {
       alligatorGame = alligatorGame.toLowerCase();
     }
 
-    if(alligatorGame === 'yes') {
+    if(alligatorGame === 'yes' || alligatorGame === 'no') {
       console.log('For question #5 the user was correct');
       alert('Hell no! I did it in Louisiana, alligators don\'t live in Australia, duh!');
       return true;
-    } else {
+    } else if (alligatorGame === 'no' || alligatorGame === 'n') {
       console.log('For question #5 the user was incorrect');
       alert('You\'re right, but I did in Louisiana, good times out in the bayou');
     }
@@ -149,9 +154,9 @@ function aboutMeQuiz () {
     totalScore++;
   }
 
-  //Question 7: Name a type of marsupial
+  //Question 7
   function question7() {
-    var questionCount = 7;
+    var questionCount = 6;
     var marsupials = ['Koala', 'Kangaroo', 'Platypus', 'Wallaby', 'Wombat'];
     while (questionCount > 0) {
       var marsupGuess = prompt('Name a type of marsupial');
@@ -163,18 +168,25 @@ function aboutMeQuiz () {
           return true;
         }
       }
-
+      
+      if (questionCount === 6) {
+        console.log
+        ('For question #7 the user was incorrect');
+      }
+      
       var indicator = questionCount -1;
       alert ('Incorrect ' + indicator + ' questions left');
 
       questionCount--;
+      
+      
     }
   }
 
   if (question7() === true) {
     totalScore++;
   }
-
+  
   if (totalScore > 4) {
     alert ('Congratulations! You received '+ totalScore + ' out of 7 total points. You\'re a certified genius!');
   } else if (totalScore < 4) {
@@ -186,6 +198,12 @@ function aboutMeQuiz () {
 
 aboutMeQuiz();
 
+//Inspiration from code review
+//DOM manipulation for returning the score
+//questions were put into an array;
+// Math.floor and Math.random are for random number generation
+//Math.random generates a random number between 0 and 1 Math.floor rounds down to get a whole number .style.display
+//lets apply ^^ to question 6
 
 
 
