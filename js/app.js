@@ -6,6 +6,8 @@
 
 'use strict';
 
+'use strict';
+
 function aboutMeQuiz () {
   var totalScore = 0;
 
@@ -15,15 +17,14 @@ function aboutMeQuiz () {
 
     if(countryGuess.toLowerCase() === 'yes') {
       console.log('For question #1 the user was correct');
-      alert('Ye, Australia mate');
+      alert('You guessed right! I lived in Australia for 5 years.');
       return true;
     } else if (countryGuess.toLowerCase === 'no'){
       console.log('For question #1 the user was incorrect');
-      alert('Nah, Australia mate');
-      
+      alert('Incorrect, I lived in Australia for 5 years');
     } else {
       console.log('For question #1 the user did not answer');
-      alert('You didn\'t answer!');
+      alert('You didn\'t answer! Oh well, onto the next question');
     }
   }
 
@@ -33,21 +34,21 @@ function aboutMeQuiz () {
 
   //Question 2
   function question2() {
-    var yearsGuess = parseInt(prompt('How many years did I live in Australia? Integers only'));
+    var siblingGuess = parseInt(prompt('How many siblings do I have?'));
 
-    if(yearsGuess === 5) {
-      alert('That is correct!');
+    if(siblingGuess === 1) {
+      alert('You got it! I have a younger brother that\'s 17 years old');
       console.log('For question #2 the user was correct');
       return true;
-    } else if (yearsGuess > 5) {
+    } else if (siblingGuess > 1) {
       console.log('For question #2 the user was incorrect');
-      alert ('Actually it was 5 years!');
-    } else if (yearsGuess < 5) {
+      alert ('Too high, I have one younger brother.');
+    } else if (siblingGuess < 1) {
       console.log('For question #2 the user was incorrect');
-      alert ('Actually it was 5 years!');
+      alert ('Nope! I have one younger brother.');
     } else {
       console.log('For question #2 the user did not answer');
-      alert('You didn\'t answer!');
+      alert('You didn\'t answer! Oh well, onto the next question');
     }
   }
 
@@ -57,22 +58,22 @@ function aboutMeQuiz () {
 
   //Question 3
   function question3() {
-    var surfingWaves = prompt('Did I catch a wave while surfing? Please respond yes or no');
+    var dunkGuess = prompt('Have I dunked a basketball?');
 
-    if(surfingWaves) {
-      surfingWaves = surfingWaves.toLowerCase();
+    if(dunkGuess) {
+      dunkGuess = dunkGuess.toLowerCase();
     }
 
-    if(surfingWaves === 'yes' || surfingWaves === 'y') {
+    if(dunkGuess === 'yes' || dunkGuess === 'y') {
       console.log('For question #3 the user was correct');
-      alert('As much as I\'d like to say getting up for two seconds counts, I can\'t two seconds');
+      alert('You are correct, though it\'s been a few years...');
       return true;
-    } else if (surfingWaves === 'no' || surfingWaves === 'n') {
+    } else if (dunkGuess === 'no' || dunkGuess === 'n') {
       console.log('For question #3 the user was incorrect');
-      alert('Went surfing on five different occasions, ended up eating saltwater every time');
+      alert('Believe it or not I have! I have video evidence to prove it.');
     } else {
       console.log('For question #3 the user did not answer');
-      alert ('You didn\'t answer!');
+      alert ('You didn\'t answer! Oh well, onto the next question');
     }
   }
 
@@ -95,6 +96,9 @@ function aboutMeQuiz () {
     } else if (kangarooBite === 'no' || kangarooBite === 'n') {
       console.log('For question #4 the user was incorrect');
       alert('Correct, I wouldn\'t go near one, they\'re strong as hell!');
+    } else {
+      console.log('For question #3 the user did not answer');
+      alert ('You didn\'t answer! Oh well, onto the next question');
     }
   }
 
@@ -117,6 +121,9 @@ function aboutMeQuiz () {
     } else if (alligatorGame === 'no' || alligatorGame === 'n') {
       console.log('For question #5 the user was incorrect');
       alert('You\'re right, but I did in Louisiana, good times out in the bayou');
+    } else {
+      console.log('For question #3 the user did not answer');
+      alert ('You didn\'t answer! Oh well, onto the next question');
     }
   }
 
@@ -160,9 +167,13 @@ function aboutMeQuiz () {
     var marsupials = ['Koala', 'Kangaroo', 'Platypus', 'Wallaby', 'Wombat'];
     while (questionCount > 0) {
       var marsupGuess = prompt('Name a type of marsupial');
-
+      
+      if (marsupGuess === null) {
+        alert ('Too bad you didn\'t answer! We\'re all out of questions!');
+        break;
+      }
       for (var i = 0; i < marsupials.length; i++) {
-        if (marsupGuess === marsupials[i]) {
+        if (marsupGuess.toLowerCase() === marsupials[i].toLowerCase()) {
           alert ('correct');
           console.log('For question #7 the user was correct');
           return true;
