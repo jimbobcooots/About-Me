@@ -2,17 +2,29 @@ body {
   background-color: rgb(255, 176, 176);
 }
 
+nav {
+  text-align: center;
+}
+
+ul {
+  list-style-type: cjk-ideographic;
+}
+
+.nav-item {
+  display: inline;
+  /*   float: left;
+  text-align: center;
+  margin-left: 165px;
+  margin-bottom: 20px; */
+}
+
 .heading {
   color:rgb(59, 130, 109);
   margin-top: 200px;
 }
 
-.myStory {
-  font-family: 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-}
-
 .statement {
+  font-family: 'Futura', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
