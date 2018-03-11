@@ -37,6 +37,7 @@ nav {
   width: 120px;
   height: 150px;
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .nav-list {
@@ -54,4 +55,23 @@ nav {
   font-size: 20px; 
   text-decoration: none;
   }
+
+.button {
+  width: 200px;
+  height: 100px;
+  margin-top: 20%;
+  margin-left: 42%;
+  border: 5px solid white;
+  background-image: linear-gradient(#49b5ff, #53c4ed, #8ed1ff, white);
+  color: #fcb5f6;
+  text-shadow: 2px 2px black;
+  font-family: 'Bangers', 'Rammetto One', sans-serif;
+  letter-spacing: 1px;
+  font-size: 36px;
+}
+
+.quiz {
+  background-color: pink;
+  background-image: url(https://img3.goodfon.com/original/5000x3189/d/1e/super-mario-igra-voprosiki.jpg);   
+}
 

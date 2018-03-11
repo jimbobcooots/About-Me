@@ -1,12 +1,4 @@
 'use strict';
-// make all questions non-case sensitive as well as giving 'y' or 'n' options using ||
-// fix console log order issues, because some of my questions aren't console logging in order
-// solve any efficiency issues and complete JS stretch goals
-// change question topics
-
-'use strict';
-
-'use strict';
 
 function aboutMeQuiz () {
   var totalScore = 0;
@@ -167,7 +159,6 @@ function aboutMeQuiz () {
     var marsupials = ['Koala', 'Kangaroo', 'Platypus', 'Wallaby', 'Wombat'];
     while (questionCount > 0) {
       var marsupGuess = prompt('Name a type of marsupial');
-      
       if (marsupGuess === null) {
         alert ('Too bad you didn\'t answer! We\'re all out of questions!');
         break;
@@ -179,25 +170,19 @@ function aboutMeQuiz () {
           return true;
         }
       }
-      
       if (questionCount === 6) {
-        console.log
-        ('For question #7 the user was incorrect');
+        console.log('For question #7 the user was incorrect');
       }
-      
       var indicator = questionCount -1;
       alert ('Incorrect ' + indicator + ' questions left');
 
       questionCount--;
-      
-      
     }
   }
 
   if (question7() === true) {
     totalScore++;
   }
-  
   if (totalScore > 4) {
     alert ('Congratulations! You received '+ totalScore + ' out of 7 total points. You\'re a certified genius!');
   } else if (totalScore < 4) {
@@ -206,8 +191,6 @@ function aboutMeQuiz () {
     alert ('You received ' + totalScore + ' out of 7 total points. You can do better than that!');
   }
 }
-
-aboutMeQuiz();
 
 //Inspiration from code review
 //DOM manipulation for returning the score
