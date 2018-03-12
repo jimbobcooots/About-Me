@@ -30,6 +30,16 @@ body {
   margin-left: 15px;
 }
 
+.prof-pic {
+  height: 150px;
+  width: 190px;
+  margin-left: 360px;
+  margin-right: 300px;
+  margin-bottom: 400px;
+  margin-top: -150px;
+  box-shadow: 10px 7px white;
+}
+
 nav {
   display: inline-block;
   position: absolute;
@@ -76,7 +86,6 @@ nav {
   font-family: 'Catamaran', sans-serif;
   font-size: 26px;
   color: white;
-  margin-bottom: 5px;
 }
 
 .resume:active {
@@ -84,6 +93,7 @@ nav {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 
 
 
