@@ -69,7 +69,7 @@ nav {
   text-decoration: none;
   }
 
-.download {
+/* .download {
   background-color: black;
   width: 200px;
   height: 100px;
@@ -79,9 +79,9 @@ nav {
   box-shadow: -5px -5px white;
   text-align: center;
   padding: -5px;
-}
+} */
 
-.resume {
+/* .resume {
   text-decoration: none;
   font-family: 'Catamaran', sans-serif;
   font-size: 26px;
@@ -92,7 +92,7 @@ nav {
   background-color: rgb(86, 197, 222);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
+} */
 
 
 
