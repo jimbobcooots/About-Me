@@ -1,0 +1,30 @@
+.button {
+  width: 200px;
+  height: 100px;
+  margin-top: 20%;
+  margin-left: 42%;
+  border: 5px solid white;
+  background-image: linear-gradient(#49b5ff, #53c4ed, #8ed1ff, white);
+  color: orange;
+  text-shadow: 2px 2px black;
+  font-family: 'Bangers', 'Rammetto One', sans-serif;
+  letter-spacing: 1px;
+  font-size: 36px;
+}
+
+.button:hover {
+  color: #fcb5f6;
+  text-shadow: 2px 2px white;
+  background-image: linear-gradient(black, black);
+}
+
+.button:active {
+  background-color: pink;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.quiz {
+  background-color: pink;
+  background-image: url(https://img3.goodfon.com/original/5000x3189/d/1e/super-mario-igra-voprosiki.jpg);   
+}

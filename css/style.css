@@ -18,7 +18,7 @@ body {
 }
 
 .heading {
-  font-family: 'Catamaran';
+  font-family: 'Catamaran', sans-serif;
   color:rgb(59, 130, 109);
   margin-bottom: -5px;
   padding-top: 15px;
@@ -39,7 +39,7 @@ nav {
   margin-top: 40px;
   margin-left: 5px;
   box-shadow: 10px 7px white;
-  font-family: 'Catamaran';
+  font-family: 'Catamaran', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -59,22 +59,31 @@ nav {
   text-decoration: none;
   }
 
-.button {
+.download {
+  background-color: black;
   width: 200px;
   height: 100px;
-  margin-top: 20%;
-  margin-left: 42%;
-  border: 5px solid white;
-  background-image: linear-gradient(#49b5ff, #53c4ed, #8ed1ff, white);
-  color: #fcb5f6;
-  text-shadow: 2px 2px black;
-  font-family: 'Bangers', 'Rammetto One', sans-serif;
-  letter-spacing: 1px;
-  font-size: 36px;
+  float: right;
+  margin-top: 475px;
+  margin-right: 25px;
+  box-shadow: -5px -5px white;
+  text-align: center;
+  padding: -5px;
 }
 
-.quiz {
-  background-color: pink;
-  background-image: url(https://img3.goodfon.com/original/5000x3189/d/1e/super-mario-igra-voprosiki.jpg);   
+.resume {
+  text-decoration: none;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 26px;
+  color: white;
+  margin-bottom: 5px;
 }
+
+.resume:active {
+  background-color: rgb(86, 197, 222);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
 
