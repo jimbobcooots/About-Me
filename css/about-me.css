@@ -49,29 +49,10 @@ nav {
   text-decoration: none;
 }
 
-.cover-wrapper {
-    position: absolute;
-    background-color: white;
-    width: 500px;
-    height: 225px;
-    padding: 10px;
-    border: 3px solid black;
-    margin-left: 210px;
-    margin-top: 30px;
-    font-size: 18px;
-}
-
-.skills-list {
-    position: relative;
-    float: left;
-    background-color: white;
-    width: 500px;
-    height: 225px;
-    padding: 10px;
-    border: 3px solid black;
-    margin-left: 210px;
-    margin-top: 350px;
-    font-size: 18px;
+.list-header {
+  text-decoration: underline;
+  font-size: 24px;
+  padding-left: 5px;
 }
 
 .experience {
@@ -80,10 +61,10 @@ nav {
   border: 3px solid black;
   color: black;
   margin-bottom: 100px;
-  margin-right: 40px;
+  margin-right: 70px;
   font-size: 14px;
   margin-top: 30px;
-  width: 575px;
+  width: 600px;
   height: auto;
 }
 
@@ -92,11 +73,45 @@ nav {
 }
 
 
-.list-header {
-  text-decoration: underline;
-  font-size: 24px;
-  padding-left: 5px;
+.cover-wrapper {
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    padding: 5px 15px 15px 15px;
+    border: 3px solid black;
+    margin-left: 210px;
+    margin-top: 30px;
+    font-size: 16px;
 }
+
+.skills-list {
+    position: relative;
+    float: left;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    padding: 5px 15px 15px 15px;
+    border: 3px solid black;
+    margin-left: 210px;
+    margin-top: 270px;
+    font-size: 16px;
+}
+
+.facts-list {
+  position: relative;
+  float: left;
+  background-color: white;
+  width: 500px;
+  height: 200px;
+  padding: 5px 15px 15px 15px;
+  border: 3px solid black;
+  margin-left: 210px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
 
 
 
